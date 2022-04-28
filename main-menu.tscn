@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://play-button.gd" type="Script" id=1]
+[ext_resource path="res://sprites/menu.png" type="Texture" id=2]
+[ext_resource path="res://button-off.png" type="Texture" id=3]
+[ext_resource path="res://button.on.png" type="Texture" id=4]
+
+[node name="Main Menu" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 256, 152.5 )
+scale = Vector2( 0.266667, 0.280556 )
+texture = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 56.0
+margin_top = 104.0
+margin_right = 200.0
+margin_bottom = 200.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+expand = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]

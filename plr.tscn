@@ -1,11 +1,11 @@
 [gd_scene load_steps=24 format=2]
 
-[ext_resource path="res://guy-top-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://sprites/guy-top-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://plr.gd" type="Script" id=2]
-[ext_resource path="res://guy-bottom-Sheet.png" type="Texture" id=3]
-[ext_resource path="res://Sprite-0005.png" type="Texture" id=4]
+[ext_resource path="res://sprites/guy-bottom-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Sprite-0005.png" type="Texture" id=4]
 
-[sub_resource type="SpriteFrames" id=26]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
@@ -13,10 +13,10 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 9.4, 5 )
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=3]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("Bottom/BotSprite:frame")
@@ -31,7 +31,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=4]
 resource_name = "idle"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Bottom/BotSprite:frame")
@@ -46,7 +46,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=5]
 resource_name = "run"
 length = 0.6
 loop = true
@@ -63,7 +63,7 @@ tracks/0/keys = {
 "values": [ 9, 10, 11, 12, 13, 14, 15, 16 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 resource_name = "walk"
 length = 0.8
 tracks/0/type = "value"
@@ -79,7 +79,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7 ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=7]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("Top/TopSprite:frame")
@@ -106,7 +106,7 @@ tracks/1/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=30]
+[sub_resource type="Animation" id=8]
 resource_name = "attack_ak"
 length = 0.15
 tracks/0/type = "value"
@@ -122,8 +122,7 @@ tracks/0/keys = {
 "values": [ 31, 32, 33, 34 ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "attack_none1"
+[sub_resource type="Animation" id=9]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Top/TopSprite:frame")
@@ -138,8 +137,7 @@ tracks/0/keys = {
 "values": [ 18, 19, 20, 19 ]
 }
 
-[sub_resource type="Animation" id=6]
-resource_name = "attack_none2"
+[sub_resource type="Animation" id=10]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Top/TopSprite:frame")
@@ -154,7 +152,7 @@ tracks/0/keys = {
 "values": [ 22, 23, 24, 23 ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=11]
 resource_name = "attack_pistol"
 length = 0.25
 tracks/0/type = "value"
@@ -170,7 +168,7 @@ tracks/0/keys = {
 "values": [ 26, 27, 28, 29 ]
 }
 
-[sub_resource type="Animation" id=31]
+[sub_resource type="Animation" id=12]
 resource_name = "idle_ak"
 length = 0.1
 loop = true
@@ -187,8 +185,7 @@ tracks/0/keys = {
 "values": [ 31 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "idle_none"
+[sub_resource type="Animation" id=13]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Top/TopSprite:frame")
 tracks/0/interp = 1
@@ -202,8 +199,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=10]
-resource_name = "idle_pistol"
+[sub_resource type="Animation" id=14]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Top/TopSprite:frame")
@@ -218,7 +214,7 @@ tracks/0/keys = {
 "values": [ 26 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=15]
 resource_name = "run_none"
 length = 0.6
 loop = true
@@ -235,7 +231,7 @@ tracks/0/keys = {
 "values": [ 9, 10, 11, 12, 13, 14, 15, 16 ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=16]
 resource_name = "run_pistol"
 length = 0.1
 tracks/0/type = "value"
@@ -251,7 +247,7 @@ tracks/0/keys = {
 "values": [ 26 ]
 }
 
-[sub_resource type="Animation" id=32]
+[sub_resource type="Animation" id=17]
 resource_name = "walk_ak"
 length = 0.1
 loop = true
@@ -268,8 +264,7 @@ tracks/0/keys = {
 "values": [ 31 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "walk_none"
+[sub_resource type="Animation" id=18]
 length = 0.8
 loop = true
 tracks/0/type = "value"
@@ -285,8 +280,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7 ]
 }
 
-[sub_resource type="Animation" id=11]
-resource_name = "walk_pistol"
+[sub_resource type="Animation" id=19]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -311,53 +305,52 @@ __meta__ = {
 speed = 6
 
 [node name="Cursor" type="AnimatedSprite" parent="."]
-frames = SubResource( 26 )
+frames = SubResource( 1 )
 speed_scale = 0.6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.0999998, 0 )
 scale = Vector2( 0.5, 1 )
-shape = SubResource( 13 )
+shape = SubResource( 2 )
 
 [node name="Bottom" type="Node2D" parent="."]
-scale = Vector2( 1, 1 )
 
 [node name="BotSprite" type="Sprite" parent="Bottom"]
-scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 hframes = 17
 frame = 1
 
 [node name="BotAnims" type="AnimationPlayer" parent="Bottom"]
 root_node = NodePath("../..")
-anims/RESET = SubResource( 7 )
-anims/idle = SubResource( 9 )
-anims/run = SubResource( 27 )
-anims/walk = SubResource( 8 )
+anims/RESET = SubResource( 3 )
+anims/idle = SubResource( 4 )
+anims/run = SubResource( 5 )
+anims/walk = SubResource( 6 )
 
 [node name="Top" type="Node2D" parent="."]
 
 [node name="TopSprite" type="Sprite" parent="Top"]
-scale = Vector2( 1, 1 )
 texture = ExtResource( 1 )
 hframes = 35
 frame = 2
 
 [node name="TopAnims" type="AnimationPlayer" parent="Top"]
 root_node = NodePath("../..")
-anims/RESET = SubResource( 2 )
-anims/attack_ak = SubResource( 30 )
-anims/attack_none1 = SubResource( 4 )
-anims/attack_none2 = SubResource( 6 )
-anims/attack_pistol = SubResource( 12 )
-anims/idle_ak = SubResource( 31 )
-anims/idle_none = SubResource( 3 )
-anims/idle_pistol = SubResource( 10 )
-anims/run_none = SubResource( 28 )
-anims/run_pistol = SubResource( 29 )
-anims/walk_ak = SubResource( 32 )
-anims/walk_none = SubResource( 5 )
-anims/walk_pistol = SubResource( 11 )
+anims/RESET = SubResource( 7 )
+anims/attack_ak = SubResource( 8 )
+anims/attack_none1 = SubResource( 9 )
+anims/attack_none2 = SubResource( 10 )
+anims/attack_pistol = SubResource( 11 )
+anims/idle_ak = SubResource( 12 )
+anims/idle_none = SubResource( 13 )
+anims/idle_pistol = SubResource( 14 )
+anims/run_none = SubResource( 15 )
+anims/run_pistol = SubResource( 16 )
+anims/walk_ak = SubResource( 17 )
+anims/walk_none = SubResource( 18 )
+anims/walk_pistol = SubResource( 19 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
 [connection signal="animation_finished" from="Top/TopAnims" to="." method="_on_AnimationPlayer_animation_finished"]
